@@ -1,0 +1,208 @@
+{
+	"id": "fd787ea8-58bd-4d54-9833-abed64da82a8",
+	"name": "Requests SWAPI",
+	"allTests": [],
+	"timestamp": "2020-02-16T02:56:51.936Z",
+	"collection_id": "360e85ff-6c16-459d-8147-77a77f21a7b4",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "360e85ff-6c16-459d-8147-77a77f21a7b4",
+		"name": "Requests SWAPI",
+		"order": [
+			"cfe23089-a537-4d02-ab6e-c8ec9f5ba552",
+			"bd9722b6-953a-4433-9d48-be5d65c5715e",
+			"285380cc-f4ad-4ab2-95b7-c5b88c4f73d4"
+		],
+		"folders_order": [],
+		"isFavorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Planets",
+			"id": "cfe23089-a537-4d02-ab6e-c8ec9f5ba552",
+			"url": "http://swapi.co/api/planets/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"706"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "706",
+			"totalRequestTime": "706",
+			"iterationResults": {}
+		},
+		{
+			"name": "Films",
+			"id": "bd9722b6-953a-4433-9d48-be5d65c5715e",
+			"url": "http://swapi.co/api/films",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"1617"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "1617",
+			"totalRequestTime": "1617",
+			"iterationResults": {}
+		},
+		{
+			"name": "Planets_Invalid",
+			"id": "285380cc-f4ad-4ab2-95b7-c5b88c4f73d4",
+			"url": "http://swapi.co/api/planets/62",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"680"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Body matches string": true
+				}
+			],
+			"time": "680",
+			"totalRequestTime": "680",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 4,
+	"totalFail": 0,
+	"totalTime": 3003,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Planets",
+			"id": "cfe23089-a537-4d02-ab6e-c8ec9f5ba552",
+			"url": "http://swapi.co/api/planets/",
+			"time": "2020-02-16T02:56:51.936Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Films",
+			"id": "bd9722b6-953a-4433-9d48-be5d65c5715e",
+			"url": "http://swapi.co/api/films",
+			"time": "2020-02-16T02:56:51.936Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Planets_Invalid",
+			"id": "285380cc-f4ad-4ab2-95b7-c5b88c4f73d4",
+			"url": "http://swapi.co/api/planets/62",
+			"time": "2020-02-16T02:56:51.936Z",
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
