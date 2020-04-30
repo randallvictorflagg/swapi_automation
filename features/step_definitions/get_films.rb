@@ -1,9 +1,9 @@
-Quando("eu envio uma requisicao GET para a API films") do
-  @response = HTTParty.get("http://swapi.co/api/films/")
+When("a GET request for films API is sent") do
+  @response = HTTParty.get("http://swapi.dev/api/films/")
   puts @response.code
 end
 
-Então("eu recebo dados validos da requisicao") do
+Then("the response contains valid data") do
   expect(@response.code).to eq 200
   puts "--------------------"
   body = JSON.parse(@response.body)
